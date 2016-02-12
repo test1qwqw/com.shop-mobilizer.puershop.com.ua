@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+  xmlns       = "http://www.w3.org/ns/widgets"
+  xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id          = "com.shop-mobilizer.puershop.com.ua"
+  version     = "16.02.12"
+  versionCode = "160212"
+>
+  <name>PuerShop интернет-магазин чая</name>
+  <author
+    href="http://shop-mobilizer.com"
+    email="info@shop-mobilizer.com">Shop-Mobilizer.com
+  </author>
+  <description>puershop.com.ua for android</description>
+  <preference name="phonegap-version" value="3.6.3"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="permissions" value="none"/>
+  <feature    name="http://api.phonegap.com/1.0/file"/>
+
+  <gap:plugin   name="org.apache.cordova.file"          source="pgb" spec="1.3.3"/>
+  <gap:plugin   name="org.apache.cordova.globalization" source="pgb" spec="0.3.4"/>
+  <gap:plugin   name="org.apache.cordova.inappbrowser"  source="pgb" spec="0.6.0"/>
+  <gap:plugin   name="cordova-plugin-x-socialsharing"   source="npm" spec="5.0.9"/>
+  <access       origin="*"/>
+  <icon         src="icon.png" gap:platform="android" gap:qualifier="hdpi"/>
+  <gap:splash   src="logo.png" gap:platform="android"/>
+  <gap:platform name="android"/>
+  <gap:plugin   name="phonegap-plugin-push"             source="npm" spec="1.2.3"/>
+</widget>
